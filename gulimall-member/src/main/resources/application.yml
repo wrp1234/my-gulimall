@@ -1,1 +1,14 @@
-spring.application.name=gulimall-member
+server:
+  port: 8000
+
+spring:
+  application:
+    name: gulimall-member
+  profiles:
+    active: dev
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto

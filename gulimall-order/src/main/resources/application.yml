@@ -1,1 +1,14 @@
-spring.application.name=gulimall-order
+server:
+  port: 9000
+
+spring:
+  application:
+    name: gulimall-order
+  profiles:
+    active: dev
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
