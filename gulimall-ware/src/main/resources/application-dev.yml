@@ -5,7 +5,10 @@ spring:
     username: root
     password: 123456
 
-
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
 
   ##多数据源的配置
   #dynamic:
